@@ -41,7 +41,7 @@ public class UserTest {
         System.out.println("Created User ID: " + createdUserId);
     }
 
-    @Test
+    @Test(dependsOnMethods = {"testCreateUserSuccessfully"})
     public void testUpdateUserSuccessfully() {
         // Arrange
         String userId = createdUserId;
@@ -59,10 +59,10 @@ public class UserTest {
         System.out.println("User updated at: " + response.getUpdatedAt());
     }
 
-    @Test
+    @Test(dependsOnMethods = {"testUpdateUserSuccessfully"})
     public void testGetUserByIdSuccessfully() {
         // Arrange
-        String userId = "2";
+        String userId = "2"; // There is a backend issue when using the createdUserId directly
         UserService userService = new UserService();
 
         // Act
@@ -76,7 +76,7 @@ public class UserTest {
     }
 
 
-    @Test
+    @Test (dependsOnMethods = {"testGetUserByIdSuccessfully"})
     public void testDeleteUserSuccessfully() {
         // Arrange
         String userId = createdUserId;

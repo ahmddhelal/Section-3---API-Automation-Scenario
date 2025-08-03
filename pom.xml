@@ -25,13 +25,6 @@
             <url>https://github.com/Ahmed.Helal</url>
         </developer>
     </developers>
-
-    <scm>
-        <url>https://github.com/Ahmed.Helal/fawry-digital-backend</url>
-        <connection>scm:git:ssh://git@github.com/Ahmed.Helal/fawry-digital-backend.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/Ahmed.Helal/fawry-digital-backend.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
     <licenses>
         <license>
             <name>apache_v2</name>
