@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="User Management">
+    <test name="Regression Test">
+        <classes>
+            <class name="com.company.tests.UserTest"/>
+        </classes>
+    </test>
+</suite>
